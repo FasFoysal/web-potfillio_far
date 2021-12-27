@@ -18,7 +18,7 @@ h1{
     background-image: url(image/header-bg.png);
     background-repeat: no-repeat;
     width: 100%;
-    overflow: hidden;
+    
 }
 .a_1_3 img {
     width: 100%;
@@ -41,7 +41,7 @@ h1{
     width: 40%;
 }
 section{
-    height: 500px;
+    height: 650px;
 }
 .a_1_2 a{
     text-decoration: none;
@@ -58,7 +58,7 @@ section{
 /* ...... */
 .b_1_0{
     background-image: url(image/biography-bg.png);
-    overflow: hidden;
+    
 }
 .a_2_1 img {
     width: 100%;
@@ -76,15 +76,17 @@ section{
 .c_1_0{
     width: 100%;
     background-image: url(image/footer-bg.png);
-    height: 1000px;
+    height: 1150px;
     overflow: hidden;
 }
 
 .c_1_2{
    text-align: center;
-    padding: 40px;
-    
-    
+    padding: 40px;  
+}
+.c_1_0 p{
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 .c_1_0_1{
     width: 100%;
@@ -111,7 +113,7 @@ section{
     padding: 5px;
 }
 .last_1{
-    width: 40%;
+    
     margin: auto;
 }
 .last_1 p{
@@ -127,5 +129,98 @@ section{
 }
 .c_1_0 p{
     text-align: center;
-    padding: 50px 0 12px 0;
+    
+}
+
+
+
+
+
+.last_1{
+    background-color: rgb(115, 115, 206);
+    font-size: 40px;
+    color: rgb(18, 214, 51);
+    
+    padding: 40px 20px ;
+    border-radius: 5px;
+   margin: auto;
+    width: 100%;
+    
+    margin: 1px ;
+    padding: 20px 20px;
+    
+    background: repeating-linear-gradient(50deg, 
+    #2980b9,#27ae60,#8e44ad,#e20909,#0984e3,#6c5ce7,
+    #be2edd,#FFC312,#EA2027,#FFC312,#1B1464
+   
+    );
+
+   animation-direction: alternate;
+   animation: gradient 60s  linear infinite;
+   background-size: 1000% 1000%;
+}
+@keyframes gradient{
+    100%{background-position:1000%;}
+    100%{background-position:1000%;}
+}
+   
+
+
+
+
+@media only screen and (max-width:800px){
+.c_1_0{
+    max-height: 1040px;
+}   
+
+
+}@media only screen and (max-width:500px){
+    .a_1_1 {
+ 
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .a_1_3 {
+        width: 35%;
+    }
+    .a_2_1 {
+        width: 40%;
+        margin-left: 30px;
+    }
+    section{
+        width: 100%;
+    }
+    .c_1_0{
+        width: 100%;
+        height: 850px;
+    }
+    .last h1 {
+        text-align: center;
+        padding: 0;
+    }
+    .last {
+        padding:50px;
+        width: 80%;
+        text-align: center;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}@media only screen and (max-width:450px){
+    .a_1_3 {
+        width: 48%;
+        margin-top: 40px;
+    }
+    .b_1_0 {
+        height: 600px;
+    }
+    .a_2_1 {
+        width: 50%;
+        margin-left: 1px;
+        padding-top: 60px;
+    }
+    .last_1 {
+        background-color: orange;
+        padding: 0;
+    }
 }
